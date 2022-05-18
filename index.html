@@ -103,8 +103,8 @@
                 
             </div>
             <section class="container services">
-                <div class="row txet-center">
-                    <div class="col-md-4 mt-5 ">
+                <div class="row text-center">
+                    <div class="col-sm-6 col-lg-4 mt-5  ">
                         <div class="card" style="width: 18rem;">
                             <img src="images/s2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -113,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-5">
+                    <div class="col-sm-6 col-lg-4 mt-5 ">
                         <div class="card" style="width: 18rem;">
                             <img src="images/s3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-5">
+                    <div class="col-sm-6 col-lg-4 mt-5 ">
                         <div class="card" style="width: 18rem;">
                             <img src="images/c1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-5">
+                    <div class="col-sm-6 col-lg-4 mt-5 ">
                         <div class="card" style="width: 18rem;">
                             <img src="images/c2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-5">
+                    <div class="col-sm-6 col-lg-4 mt-5 ">
                         <div class="card" style="width: 18rem;">
                             <img src="images/s2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -149,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-5">
+                    <div class="col-sm-6 col-lg-4 mt-5 ">
                         <div class="card" style="width: 18rem;">
                             <img src="images/s2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -203,12 +203,11 @@
         <script src="js/plugins.js"></script>
 
 <script>
-    if ($(window).scrollTop()>100){
-        $('.head').addClass( " back");
-    }
-    else {
-        $('.head').removeClass(" back");
-    }
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            $('.head').toggleClass(" back", ($(window).scrollTop() > 100));
+        });
+    });
 </script>
     </body>
 </html>

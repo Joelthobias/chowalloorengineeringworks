@@ -17,9 +17,17 @@ button{
     .services div .card {
         box-shadow: 2px 20px 60px #bebebe, -20px -20px 60px #ffffff !important;
     }
+    /* .services div {
+        margin-left: 5px ;
+    } */
+}
+@media(max-width:500px){
+    .services div {
+        margin-left: 5px ;
+    }
 }
 .back{
-    background: #fefe;
+    background: #eeee;
 }
 button{
     outline: none;
