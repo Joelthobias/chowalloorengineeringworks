@@ -14,7 +14,7 @@
 
     </head>
     <body>
-        <header class=" fixed-top ">
+        <header class="head fixed-top ">
             <nav class="navbar  navbar-expand-lg navbar-light ">
             <div class="container">
                 <div class="">
@@ -71,7 +71,7 @@
             </section>
             <section class="container">
                 <div class="row abt">
-                    <div class="col-md-6 about">
+                    <div class="col-lg-6 about">
                         <h3 class="text-center">Welcome</h3>
                         <h4>
                             Chowalloor engineering works is an initiative of
@@ -93,11 +93,12 @@
 
                         </h4>
                     </div>
-                    <div class="col-md-6 about_img">
+                    <div class="col-lg-6 about_img">
                         <img src="images/about-img1.jpg" alt="">
                     </div>
                 </div>
             </section>
+
             <div class="parallax">
                 
             </div>
@@ -201,6 +202,13 @@
         <!-- Custom JS --->
         <script src="js/plugins.js"></script>
 
-
+<script>
+    if ($(window).scrollTop()>100){
+        $('.head').addClass( " back");
+    }
+    else {
+        $('.head').removeClass(" back");
+    }
+</script>
     </body>
 </html>
