@@ -15,7 +15,7 @@ button{
         margin-top: 80px;
     }
     .services div .card {
-        box-shadow: 2px 20px 60px #bebebe, -20px -20px 60px #ffffff !important;
+        box-shadow: 2px 20px 60px rgba(225, 223, 225, 0.933), -20px -20px 60px #ffffff !important;
     }
     /* .services div {
         margin-left: 5px ;
@@ -25,9 +25,23 @@ button{
     .services div {
         margin-left: 5px ;
     }
+    .camera_wrap{
+        margin-bottom: 0 !important;
+    }
 }
 .back{
     background: #eeee;
+}
+@media(min-width:558px){
+    .services div .card{
+        border-radius: 50px;
+        /* background: #e0e0e0; */
+        box-shadow:  20px 20px 60px #bebebe,
+                    -20px -20px 60px #ffffff;
+    }
+    .about{
+        margin-top: 100px;
+    }
 }
 button{
     outline: none;
@@ -60,9 +74,7 @@ button{
 	margin-right: auto;
 	margin-left: auto;
 }
-.about{
-    margin-top: 100px;
-}
+
 .about h4{
     font-size: 1rem;
     line-height: 1.8;
@@ -92,21 +104,31 @@ button{
     height: 300px;
     margin-bottom: 50px;
 }
-.services div {
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
 	padding-right: 20px;
 	display: flex;
 	justify-content: center;
 }
+
 .services div .card{
     border-radius: 50px;
-    /* background: #e0e0e0; */
-    box-shadow:  20px 20px 60px #bebebe,
-                -20px -20px 60px #ffffff;
 }
 .card img {
 	padding: 17px;
 	margin-left: 9px;
 	border-radius: 50px;
+}
+.card a{
+    border-radius: 18px;
+    padding: 12px;
+    background-color: #111111d6;
+    border: none;
+
 }
 .foot1{
     margin: 150px 20px 100px 20px;
@@ -118,4 +140,14 @@ button{
 }
 a{
     text-decoration: none;
+}
+.foot1_icon{
+    margin: 2px;
+    
+}
+.contact a{
+    margin-top: 25px;
+}
+address{
+    line-height: 1.8;
 }
